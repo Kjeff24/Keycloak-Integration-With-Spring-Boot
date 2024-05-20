@@ -1,0 +1,19 @@
+spring:
+  application.name: keycloak
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: ${jwk-set-uri}
+      client:
+        provider:
+          keycloak:
+            issuer-uri: ${issuer-uri}
+        registration:
+          ${client-id}:
+            client-id: ${client-id}
+            client-secret: ${client-secret}
+            provider: keycloak
+            authorization-grant-type: authorization_code
+            scope: openid
+server.port: 8081
