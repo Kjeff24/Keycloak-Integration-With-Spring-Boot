@@ -4,15 +4,15 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          jwk-set-uri: ${jwk-set-uri}
+          jwk-set-uri: ${JWT_SET_URI}
       client:
         provider:
           keycloak:
-            issuer-uri: ${issuer-uri}
+            issuer-uri: ${ISSUER_URI}
         registration:
-          ${client-id}:
-            client-id: ${client-id}
-            client-secret: ${client-secret}
+          ${CLIENT_ID}:
+            client-id: ${CLIENT_ID}
+            client-secret: ${CLIENT_SECRET}
             provider: keycloak
             authorization-grant-type: authorization_code
             scope: openid
