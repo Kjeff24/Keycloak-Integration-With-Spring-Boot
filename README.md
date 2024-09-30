@@ -1,5 +1,5 @@
 # KEYCLOAK INTEGRATION WITH SPRING BOOT
-Keycloak integration with spring boot
+Configuring keycloak as an authorization server. Follow the steps to create a realm and configure identity providers such as Google and GitHub.
 
 ## USAGE
 In this project, postgres was used as the database for keycloak.
@@ -7,10 +7,10 @@ Keycloak admin credentials are username/email=`admin` and password=`password`.
 If you have postgres installed on your computer follow [STEP 1](#step-1) else move to [STEP 2](#step-2)
 ### STEP 1
 - Create a database `keycloak`.
-- In your root folder where you have `docker-compose.yml`, modify the command in the keycloak service with your database credentials
+- In your root folder where you have `docker-compose-keycloak.yml`, modify the command in the keycloak service with your database credentials
 - Run
 ```
-docker-compose up keycloak
+docker-compose -f docker-compose-keycloak.yml up
 ```
 - Move to [STEP 3](#step-3)
 
