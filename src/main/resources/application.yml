@@ -4,7 +4,9 @@ spring:
     oauth2:
       resourceserver:
         jwt:
+          # You can specify either jwk-set-uri or issuer-uri
           jwk-set-uri: ${JWT_SET_URI}
+          issuer-uri: ${ISSUER_URI}
       client:
         provider:
           keycloak:
