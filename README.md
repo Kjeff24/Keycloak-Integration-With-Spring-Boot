@@ -42,6 +42,7 @@ docker-compose up
 - Configure admin credentials (email, first name and last name)
 ![admin user-management](assets/admin-management.png)
 - In the `Realm Settings`, configure the email tab as below to send email for verification, password reset etc.
+NB: For google smtp, use app password
 ![user configuration](assets/email-configuration-1.png)
 ![user configuration](assets/email-configuration-2.png)
 
